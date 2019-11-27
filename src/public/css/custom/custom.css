@@ -1,0 +1,131 @@
+.full-height {
+  min-height: 100vh; }
+
+.full-width {
+  flex: 1 1 auto; }
+
+.my-section {
+  opacity: 0;
+  pointer-events: none; }
+
+.presentation {
+  background-color: #0d0d4b;
+  min-height: 100%;
+  color: white; }
+  .presentation .top {
+    min-height: 80%; }
+    .presentation .top .description {
+      font-size: 0.7em; }
+    .presentation .top .reserve-button {
+      border-radius: 50px;
+      border: none;
+      background: blueviolet;
+      background: linear-gradient(90deg, blueviolet 0%, blueviolet 35%, #62bee9 100%);
+      color: white;
+      text-transform: capitalize;
+      font-family: "soleil";
+      font-size: 10px;
+      font-weight: 100;
+      padding: 0.5rem 1rem;
+      max-height: 3rem; }
+  .presentation .bottom {
+    border-top: solid 1px blueviolet; }
+    .presentation .bottom .social-icon {
+      width: 2rem;
+      height: 2rem; }
+
+.tournament-image {
+  background-image: url("../assets/img/computer.jpg");
+  background-size: cover;
+  min-height: inherit; }
+
+.platforms {
+  background-color: #f8f8f8;
+  height: 150px;
+  align-items: center; }
+  .platforms .logo {
+    width: auto;
+    height: 50%;
+    opacity: 0.5;
+    filter: alpha(opacity=50); }
+
+.tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .tab .tablinks {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 1s;
+    min-width: max-content;
+    border-bottom: 1px solid #f1ebeb; }
+  .tab .tablinks:hover {
+    background-color: #ddd; }
+  .tab .tablinks.active {
+    border-bottom: 2px solid blue;
+    font-weight: 500; }
+
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+  padding-top: 5%; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.faq {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .faq .question {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%; }
+  .faq .collapsible {
+    cursor: pointer;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    background-color: #fdfafa;
+    border-bottom: 1px solid #f0e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .faq .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fdfafa;
+    width: 60%;
+    font-size: 0.8rem; }
+
+.footer {
+  background-image: url("../assets/img/keyboard.jpg");
+  background-size: cover;
+  min-height: 400px;
+  filter: hue-rotate(90deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .footer .sign-up {
+    border-radius: 50px;
+    border: none;
+    color: red;
+    background-color: white;
+    font-family: "soleil";
+    font-size: 10px;
+    font-weight: 100;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    height: 3rem; }
